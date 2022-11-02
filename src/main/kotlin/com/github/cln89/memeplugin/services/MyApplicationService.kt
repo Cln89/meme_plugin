@@ -1,6 +1,6 @@
-package org.jetbrains.plugins.template.services
+package com.github.cln89.memeplugin.services
 
-import org.jetbrains.plugins.template.MyBundle
+import com.github.cln89.memeplugin.MyBundle
 
 class MyApplicationService {
 
