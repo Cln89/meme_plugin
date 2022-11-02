@@ -1,18 +1,13 @@
 <!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.cln89.memeplugin</id>
-    <name>meme_plugin</name>
-    <vendor>cln89</vendor>
+    <name>Code Analyzer</name>
+    <vendor url="https://www.github.com/Cln89">Cln89</vendor>
 
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.cln89.memeplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.cln89.memeplugin.services.MyProjectService"/>
+        <toolWindow factoryClass="com.github.cln89.meme_plugin.ui.toolwindow.MemePluginToolWindowFactory"
+                    id="Code Analyzer" anchor="right" icon="/icons/Icon.png"/>
     </extensions>
-
-    <applicationListeners>
-        <listener class="com.github.cln89.memeplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
-    </applicationListeners>
 </idea-plugin>
